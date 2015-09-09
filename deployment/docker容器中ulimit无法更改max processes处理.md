@@ -16,6 +16,8 @@
 1024
 [root@a47d6b8111ff logs]# cat /usr/local/nginx/conf/nginx.conf | grep rlimit
 worker_rlimit_nofile 51200;
+[root@a47d6b8111ff logs]# cat /usr/local/php/etc/php-fpm.conf | grep rlimit_files
+rlimit_files = 1024
 ```
 > 5.修改系统ulimit出错
 ```
